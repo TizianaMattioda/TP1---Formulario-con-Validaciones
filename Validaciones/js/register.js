@@ -18,6 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
         errorSpan.classList.add("text-success");
         errorSpan.classList.remove("text-danger");
     };
+    const resetSpan = (input) => {
+        const errorSpan = document.getElementById(`error${input.id.charAt(0).toUpperCase() + input.id.slice(1)}`);
+        errorSpan.textContent = "";
+        errorSpan.classList.remove("text-success");
+        errorSpan.classList.remove("text-danger");
+    }
 
     const validarNombre = () => {
         if (nombre.value.trim().length < 3) {
@@ -67,6 +73,10 @@ document.addEventListener("DOMContentLoaded", () => {
         if (validarNombre() && validarEmail() && validarPassword() && validarConfirmPassword()) {
             alert("Registro exitoso");
             form.reset();
+            resetSpan(nombre);
+            resetSpan(email);
+            resetSpan(password);
+            resetSpan(confirmPassword);
         }
     });
 });
