@@ -1,7 +1,20 @@
 # 📝 **README - Formulario de Registro**
 
-## 🎨 **Diseño**
-Para diseñar nuestra página utilizamos **Bootstrap** y nos basamos en el registro de ejemplo que nos mostró nuestra profesora **Jessie**.
+## 🎨 Diseño
+Para lograr una interfaz moderna y atractiva, combinamos la potencia de **Bootstrap 5** con **CSS personalizado**.
+
+### 🔹 Bootstrap
+Utilizamos Bootstrap para estructurar y dar estilo a los elementos del formulario de manera rápida y responsiva.  
+Gracias a su sistema de **grid**, logramos una distribución equilibrada de los campos en distintos tamaños de pantalla.  
+Además, sus componentes como **cards** y **botones** nos facilitaron la construcción de un diseño limpio y profesional.
+
+### 🎨 CSS Personalizado
+Para no depender completamente de Bootstrap, creamos nuestro propio archivo `styles.css`, donde personalizamos los colores, sombras y efectos para lograr una identidad visual más marcada.  
+Algunos puntos destacados:
+
+- **🎨 Fondo con degradado:**  
+  ```css
+  background: linear-gradient(to right, #667eea, #764ba2);
 
 ---
 
